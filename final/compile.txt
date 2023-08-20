@@ -1,0 +1,21 @@
+lex inorder.l
+yacc -d inorder.y
+gcc lex.yy.c inorder.tab.c
+a.exe
+
+
+example
+
+input 2+3*5
+output 235*+
+
+lex calP.l
+yacc -d calP.y
+gcc lex.yy.c calP.tab.c
+a.exe
+
+
+example
+
+input 2+3
+output 5
